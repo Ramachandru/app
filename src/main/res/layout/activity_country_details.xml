@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/country_flag"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/country_name_field"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:text="Country Name"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/country_flag"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/capital_field"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Capital Name : "
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/country_name_field"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/country_capital_value"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/capital_field"
+        android:layout_below="@+id/country_name_field"
+        android:textSize="20dp"
+        android:text="Capital Value "
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/population_field"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Population : "
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/capital_field"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/population_value"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/population_field"
+        android:layout_below="@+id/country_capital_value"
+        android:textSize="20dp"
+        android:text="Population Value "
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/currency_field"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Currency : "
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/population_field"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/currency_value"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/currency_field"
+        android:layout_below="@+id/population_value"
+        android:textSize="20dp"
+        android:text="Currency Value "
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/languages_field"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Languages : "
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currency_field"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/language_value"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/languages_field"
+        android:layout_below="@+id/currency_value"
+        android:textSize="20dp"
+        android:text="Languages Value "
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+    </layout>
